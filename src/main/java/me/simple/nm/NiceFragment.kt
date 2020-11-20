@@ -10,7 +10,7 @@ abstract class NiceFragment : Fragment() {
 
     abstract fun setLayoutRes(): Int
     abstract fun initView()
-    abstract fun initDate()
+    abstract fun initData()
     abstract fun initListener()
 
     override fun onCreateView(
@@ -27,7 +27,7 @@ abstract class NiceFragment : Fragment() {
     ) {
         super.onViewCreated(view, savedInstanceState)
         initView()
-        initDate()
+        initData()
         initListener()
     }
 }

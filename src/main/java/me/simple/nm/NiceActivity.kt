@@ -11,7 +11,7 @@ abstract class NiceActivity : AppCompatActivity() {
 
     abstract fun setLayoutRes(): Int
     abstract fun initView()
-    abstract fun initDate()
+    abstract fun initData()
     abstract fun initListener()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ abstract class NiceActivity : AppCompatActivity() {
         onAfterCreate(savedInstanceState)
 
         initView()
-        initDate()
+        initData()
         initListener()
     }
 
