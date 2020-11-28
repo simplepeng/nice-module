@@ -24,9 +24,9 @@ abstract class NiceItemBinder<T>(
         holder: ItemViewHolder,
         item: T
     ) {
-        onBind(holder, item)
         holder.itemView.singleClick {
             onItemClick?.invoke(holder.adapterPosition, item)
         }
+        onBind(holder, item)
     }
 }
